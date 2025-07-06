@@ -1,1 +1,2 @@
-This the master file.
+This the master file. 
+It is the updated file of private branch.
