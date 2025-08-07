@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven 3.8.8'  // or whatever version name you set
+    }
+
+    stages {
+        stage('Maven Build') {
+            steps {
+                dir('myapp') {
+                    sh 'mvn clean package'
+                }
+            }
+        }
+    }
+}
