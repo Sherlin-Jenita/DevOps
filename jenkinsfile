@@ -1,7 +1,7 @@
 pipeline {
    environment {
      git_url = "https://github.com/Sherlin-Jenita/DevOps.git"
-     git_branch = "master"
+     git_branch = "test"
    }
 
   //agent {label 'dev'}
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Pull Source') {
       steps {
-        git credentialsId: '3a054dfb-34c6-41c5-8cfd-02b15aefaf61', branch: "${git_branch}", url: "${git_url}"
+        git credentialsId: '0e4ebb9a-ff37-4fd9-947f-4a34de6fc5cc', branch: "${git_branch}", url: "${git_url}"
        
       }
      }
